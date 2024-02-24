@@ -31,7 +31,7 @@ public class BookResource {
     @Produces(MediaType.TEXT_PLAIN)
     public int count(){
         logger.info("Returns count of books");
-        return repo.count();
+        return repo.countAllBooks();
     }
 
     @GET
